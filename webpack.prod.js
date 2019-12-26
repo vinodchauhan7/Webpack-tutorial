@@ -41,6 +41,23 @@ module.exports = merge(common, {
           "css-loader", //2. Turns css into commonjs
           "sass-loader" //1. Turns sass into css
         ]
+      },
+      {
+        test: /\.svg$/,
+        loader: "svg-url-loader",
+        options: {
+          // Images larger than 20 KB won’t be inlined
+          limit: 20 * 1024,
+          noquotes: true
+        }
+      },
+      {
+        test: /\.(jpg|png|gif|svg)$/,
+        loader: "image-webpack-loader",
+        // Specify enforce: 'pre' to apply the loader
+        // before url-loader/svg-url-loader
+        // and not duplicate it in rules with them
+        enforce: "pre"
       }
     ]
   }
