@@ -1,0 +1,24 @@
+{
+    "name": "Webpack-tutorial",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vinodchauhan7/Webpack-tutorial.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vinodchauhan7/Webpack-tutorial/issues"
+    },
+    "homepage": "https://github.com/vinodchauhan7/Webpack-tutorial#readme",
+    "devDependencies": {
+        "webpack": "^4.41.4",
+        "webpack-cli": "^3.3.10"
+    }
+}

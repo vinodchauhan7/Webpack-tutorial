@@ -1,0 +1,1 @@
+alert("new Index file");
