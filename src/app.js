@@ -1,7 +1,6 @@
-const handleError = new HandleError();
-const service = new Service();
-
-const main = (handleError, service) => {
+import { checkLettersOnly } from "./utils/validateName";
+import { checkUserIdValidation } from "./utils/validateUserId";
+export const main = (handleError, service) => {
   handleError.hideErrors();
   service.onClick(() => {
     var name = service.getName();
@@ -15,5 +14,3 @@ const main = (handleError, service) => {
     }
   });
 };
-
-main(handleError, service);

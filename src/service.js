@@ -1,4 +1,4 @@
-class Service {
+export class Service {
   constructor() {
     this.name = document.getElementById("name");
     this.userId = document.getElementById("userId");

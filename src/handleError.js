@@ -1,9 +1,11 @@
-class HandleError {
+import { checkLettersOnly } from "./utils/validateName";
+import { checkUserIdValidation } from "./utils/validateUserId";
+export class HandleError {
   constructor() {
     this.errorBox = document.getElementById("error");
   }
 
-  showError = (name, userId) => {
+  showError(name, userId) {
     var message = "Please add valid value for => \n ";
     if (!checkLettersOnly(name)) {
       message += `Name : ${name} must contains only characters \n`;
@@ -14,9 +16,9 @@ class HandleError {
 
     this.errorBox.classList.remove("invisible");
     this.errorBox.innerText = message;
-  };
+  }
 
-  hideErrors = () => {
+  hideErrors() {
     this.errorBox.classList.add("invisible");
-  };
+  }
 }
