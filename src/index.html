@@ -7,23 +7,60 @@
 </head>
 
 <body class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
     <h1 class="text-center mt-5">Webpack !!</h1>
     <div class="alert alert-danger" id="error" role="alert"></div>
     <div class="row mt-3">
-        <div class="form-group">
-            <label for="name">UserName </label>
-            <input type="text" id="name" name="name" placeholder="Enter name" class="form-control" required />
-        </div>
-        <div class="form-group ml-5">
-            <label for="userId">Password </label>
-            <input type="text" id="userId" name="userId" placeholder="Enter UserId" class="form-control" required />
-        </div>
+      <div class="form-group">
+        <label for="name">UserName </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter name"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="form-group ml-5">
+        <label for="userId">Password </label>
+        <input
+          type="text"
+          id="userId"
+          name="userId"
+          placeholder="Enter UserId"
+          class="form-control"
+          required
+        />
+      </div>
     </div>
     <div class=" mt-2">
-        <button id="register" class="btn btn-primary">Register</button>
+      <button id="register" class="btn btn-primary">Register</button>
     </div>
     <div class="card-body">Output : <span id="result"></span></div>
     <img src="./assets/webpack.svg" alt="webpack Image" />
-</body>
-
+  </body>
 </html>

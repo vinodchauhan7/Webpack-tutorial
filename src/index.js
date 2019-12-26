@@ -6,3 +6,4 @@ import "./index.scss";
 const handleError = new HandleError();
 const service = new Service();
 main(handleError, service);
+console.log("main");
